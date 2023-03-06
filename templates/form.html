@@ -1,0 +1,30 @@
+{% extends 'Base.html' %}
+{% block title %} Form Page {% endblock %}
+{% block content %}
+<div class='container'>
+    <form action='/' method='POST' enctype='multipart/form-data'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <p style='margin-top: 20px'><b>Possible classes</b></p>
+                <ul>
+                    <li>with_mask : <span style='background-color: green; color: white;'>Green</span></li>
+                    <li>without_mask : <span style='background-color: red; color:white'>Red</span></li>
+                    <li>mask_weared_incorrect : <span style='background-color: blue; color:white;'>Blue</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label"><h3>Please upload your image</h3></label>
+            <input class="form-control" type="file" name='formFile' id="formFile">
+        </div>
+        <button type="submit" class="btn btn-primary" style='float: right;'>Upload</button>
+    </form>
+</div>
+{% endblock %}
+
+{% if filename %}
+<div>
+    <p>{{ url_for('display_pred_img', filename=filename) }}</p>
+    <img src="{{ url_for('display_pred_img', filename=filename) }}">
+</div>
+{% endif %}

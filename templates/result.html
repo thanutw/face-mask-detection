@@ -1,0 +1,21 @@
+{% extends 'Base.html' %}
+
+{% block title %}Result Page{% endblock %} 
+
+{% block content %}
+
+{% if filename %}
+<div class='container'>
+    <div class='row'>
+        <div class='col-md-12' style='margin-top: 5%'>
+            <h2>Result Image(with bounding box)</h2>
+        </div>
+
+        <div class='col-md-12'>
+            <img src="{{ url_for('display_pred_img', filename=filename) }}">
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
