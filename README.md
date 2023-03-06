@@ -14,6 +14,6 @@ py index.py
 
 Access via any browsers : [127.0.0.1:5000](127.0.0.1:5000)
 
-## Demo Images
+## Demo
 ![demo1](demo1.PNG)
 ![demo2](demo2.PNG)
