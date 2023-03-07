@@ -1,5 +1,7 @@
 # face-mask-detection
 
+A Face mask detection web application built on Flask
+
 Dataset link [here](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)
  
 ## Installation
