@@ -1,4 +1,6 @@
 # face-mask-detection
+
+Dataset link [here](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)
  
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install library.
